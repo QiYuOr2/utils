@@ -4,3 +4,4 @@ export const sum = (...args: number[]) => {
 
 export { default as debounce } from './debounce';
 export { animateDebounce } from './debounce';
+export { default as throttle } from './throttle';

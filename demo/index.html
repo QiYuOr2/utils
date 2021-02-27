@@ -29,7 +29,9 @@
         container.innerHTML = count++;
       }
 
-      container.onmousemove = sym.debounce(getUserAction, 1000, false);
+      container.onmousemove = sym.throttle(getUserAction, 1000, {
+        leading: true,
+      });
     </script>
   </body>
 </html>
